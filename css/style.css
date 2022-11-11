@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Variables */ 
+
+:root{
+    --color-primary: #1c2f47;
+    --color-secondary: #49cdd2;
+    --color-third: #fe5757;
+    --color-fourth: #126b61;
+
+}
