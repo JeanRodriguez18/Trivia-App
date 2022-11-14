@@ -12,8 +12,164 @@
 
 :root{
     --color-primary: #1c2f47;
-    --color-secondary: #49cdd2;
-    --color-third: #fe5757;
-    --color-fourth: #126b61;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #fe5757;
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-bg: #1c2f47;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+    --color-light-blue: #49cdd2;
+    --color-dark-blue: #1c2f47;
+    --color-green: #126b61;
 
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+
+}
+
+/* setting up font family, line height between elements, color using variable define eariler and background */ 
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    background: var(--color-bg);
+}
+
+/* setting up container with the width of the variable define earlier wich is for large devices, later on will change it with media querys and margin 0 auto which is going to put it in the middle */ 
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+
+}
+
+/* giving every section a padding of 6rem (1rem = 16 pixels) for the top and bottom and zero for left and right*/ 
+section{
+    padding: 6rem 0;
+}
+
+/* giving every h2 in section is going to be text-aling to the center and a margin bottom of 4rem */ 
+section h2{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* every header tag is going to have a line-height of 1.2*/ 
+h1, h2, h3, h4, h5{
+    line-height: 1.2;
+}
+
+/* every h1 is going to have a font size of 2.4rem*/ 
+h1{
+  font-size: 2.4rem;  
+}
+
+/* every h2 is going to have a font size of 2rem*/ 
+h2{
+    font-size: 2rem;  
+}
+
+/* every h3 is going to have a font size of 1.6rem*/ 
+h3{
+    font-size: 1.6rem;  
+}
+
+/* every h4 is going to have a font size of 1.3rem*/ 
+h4{
+    font-size: 1.3rem;  
+}
+/* every a tag is going to have a color of white define by the variable*/ 
+a {
+    color: var(--color-white);
+}
+
+/* every image is going to have a width of 100% of its parent*/ 
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/*btn class*/
+.btn{
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+/*btn class on hover is going to change background to transparent, color inside to white, border color to white  */
+.btn:hover{
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+/*btn-primmary class background color to the variable define earlier and color inside */
+.btn-primary{
+    background-color: var(--color-danger);
+    color: var(--color-white);
+}
+
+/*=============================== NAVBAR =========================== */
+/*nav bar tag */
+nav{
+    background: transparent; /*background of color transparent*/ 
+    width: 100vw; /*width of 100 viewport it means that doesn't matter the screen is always going to take the entire screen*/
+    height: 5rem; /*is going to have a height of 5 rem equal to 80 pixels */
+    position: fixed; /*position fixed so if we scroll we are going to see the nav bar */
+    top: 0; /*top 0 so nav bar will always be on the top*/
+    z-index: 11; /*z index of eleven so if its going to be on top of everything of the page*/
+}
+/*nav_container class*/
+.nav_container{
+    height: 100%; /*height of 100% of the parent*/
+    display: flex; /*display flex to position items side by side and not on top of each one*/
+    justify-content: space-between; /*items are evenly distributed in the line first item at the start and last item at the end*/
+    align-items: center; /*align items to the center*/
+}
+
+/*Don't display none to buttons in large screens*/
+nav button {
+    display: none;
+}
+
+/*nav_menu class*/
+.nav_menu{
+    display: flex; /*display flex to position items side by side and not on top of each one*/
+    align-items: center; /*align items to the center*/
+    gap: 4rem; /*margin between items*/
+}
+
+/*a tag inside nav_menu class*/
+.nav_menu a {
+    font-size: 0.9rem;
+    transition: var(--transition)
+}
+
+/*a tag on hover inside nav_menu class*/
+.nav_menu a:hover {
+    color: var(--color-bg2);
+}
+
+/* section_container class */
+.section_container{
+    display: grid; /*display grid to divide into columns*/
+    grid-template-columns: 1fr 1fr; /*take one fraction on each side*/
+    align-items: center; /*align items to the center*/
+    gap: 5rem; /*margin between items*/
+    height: 100%; 
+}
+
+.section_left p {
+    margin: 2rem 0 2.4rem;
 }
