@@ -123,7 +123,7 @@ img{
 /*=============================== NAVBAR =========================== */
 /*nav bar tag */
 nav{
-    background: transparent; /*background of color transparent*/ 
+    background: var(--color-bg2); /*background of color transparent*/ 
     width: 100vw; /*width of 100 viewport it means that doesn't matter the screen is always going to take the entire screen*/
     height: 5rem; /*is going to have a height of 5 rem equal to 80 pixels */
     position: fixed; /*position fixed so if we scroll we are going to see the nav bar */
@@ -172,4 +172,90 @@ nav button {
 
 .section_left p {
     margin: 2rem 0 2.4rem;
+}
+
+
+.titulo_categories{
+    text-align: center; /*aligning tittle to the center*/
+}
+
+/*Media QUERIES FOR TABLETS*/
+@media screen and (max-width: 1024px){
+    .container{
+        width: var(--container-width-md);
+    }
+
+    h1{
+        font-size: 2.2rem;
+    }
+
+    h2{
+        font-size: 1.7rem;
+    }
+
+    h3{
+        font-size: 1.4rem;
+    }
+
+    h4{
+        font-size: 1.2rem;
+    }
+   
+    nav button{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: var(--color-white);
+        cursor: pointer;
+    }
+
+    nav button#close-menu-btn{
+        display: none;
+    }
+
+    .nav_menu{
+        position: fixed;
+        top: 5rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+    .nav_menu li{
+        width: 100%;
+        height: 5.8rem;
+    }
+
+    .nav_menu li a{
+        background: var(--color-bg2);
+        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .nav_menu li a:hover{
+        background: var(--color-bg1);
+        color: var(--color-white);
+    }
+}
+
+
+/*Media QUERIES FOR PHONES*/
+@media screen and (max-width: 600px){
+    .container{
+        width: var(--container-width-sm);
+    }
+
+    section{
+        height: 100vh;
+    }
+    .section_container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 0;
+    }
 }
