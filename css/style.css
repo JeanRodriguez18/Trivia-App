@@ -158,7 +158,7 @@ nav button {
 
 /*a tag on hover inside nav_menu class*/
 .nav_menu a:hover {
-    color: var(--color-bg2);
+    color: var(--color-bg);
 }
 
 /* section_container class */
@@ -178,6 +178,68 @@ nav button {
 .titulo_categories{
     text-align: center; /*aligning tittle to the center*/
 }
+
+
+/*class flexbox for categories card*/
+
+.row{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+}
+
+.categorie-card{
+    background-color: var(--color-bg2);
+    width: 300px;
+    height: 300px;
+    margin: 20px 10px 10px 10px;
+    border-radius: 20px;
+}
+
+.categorie-content{
+    padding: 10px;
+}
+
+.categorie-icon{
+    text-align: center;
+}
+
+.categorie-text{
+    text-align: center;
+}
+
+.categorie-text h2{
+    font-size: 20px;
+}
+
+.categorie-text p{
+    font-size: 15px;
+    line-height: 1.3em;
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+
+.categorie-btn{
+    text-align: center;
+}
+
+.btn-categorie{
+    background-color: var(--color-bg);
+    color: #fff;
+    width: 150px;
+    cursor: pointer;
+    height: 38px;
+    font-size: 15px;
+    font-weight: 600px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+}
+
 
 /*Media QUERIES FOR TABLETS*/
 @media screen and (max-width: 1024px){
