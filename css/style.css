@@ -240,6 +240,97 @@ nav button {
     border: none;
 }
 
+/*CONTACT CSS*/
+
+.contact_container{
+    background: var(--color-bg1);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 50% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+
+.contact_aside{
+    background-color: var(--color-bg2);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+}
+
+.aside_image{
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+
+.contact_aside h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contact_aside p{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.contact_details li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact_socials{
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+
+.contact_socials a {
+    background: var(--color-bg1);
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.contact_socials a:hover{
+    background: transparent;
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 12rem;
+}
+
+.form_name{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.contact_form input[type="text"]{
+    width: 50%;
+}
+
+input, 
+textarea{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-bg);
+    color: var(--color-white);
+}
+
+.contact_form .btn {
+    width: max-content;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
 
 /*Media QUERIES FOR TABLETS*/
 @media screen and (max-width: 1024px){
@@ -337,6 +428,31 @@ nav button {
         gap: 0;
         padding-bottom: 3;
     }
+
+    /*Contact Form*/
+
+    .contact{
+        padding-bottom: 0;
+    }
+
+    .contact_container{
+        gap: 1.5rem;
+        margin-top: 3rem;
+        height: auto;
+        padding: 1.5rem;;
+    }
+
+    .contact_aside{
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+
+    .contact_form{
+        align-self: center;
+        margin-right: 5.5rem;
+    }
+
 }
 
 
@@ -354,4 +470,22 @@ nav button {
         text-align: center;
         margin-top: 0;
     }
+
+    .contact_container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+    .contact_form{
+        margin: 0 1.5rem 3rem;
+    }
+
+    .form_name{
+        flex-direction: column;
+    }
+
+    .form_name input[type="text"] {
+        width: 100%;
+    };
 }
