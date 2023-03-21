@@ -195,7 +195,7 @@ nav button {
 .categorie-card{
     background-color: var(--color-bg2);
     width: 300px;
-    height: 300px;
+    height: 315px;
     margin: 20px 10px 10px 10px;
     border-radius: 20px;
 }
@@ -421,7 +421,7 @@ textarea{
 
     /*Section*/
     section{
-        height: 52vh;
+        height: 100%;
         margin-bottom: 4rem;
     }
     .section_container{
@@ -463,7 +463,7 @@ textarea{
     }
 
     section{
-        height: 100vh;
+        height: 100%;
     }
     .section_container{
         grid-template-columns: 1fr;
