@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia App</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!--GOOGLE FONTS (MONTSERRAT)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+
+</head>
+
+    <body>
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html"><h4>TRIVIA APP</h4></a>
+            <ul class="nav_menu">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="contact.html">Contact</a></li> -->
+            </ul>
+            <button id="open-menu-btn"><i class="bi bi-list"></i></button>
+            <button id="close-menu-btn"><i class="bi bi-x-lg"></i></button>
+        </div>
+    </nav>
+    
+    <section>
+
+        
+
+        <div class="container">
+
+            <div class="row">
+                <!--First card-->
+                <div class="question-card">
+                    <div class="categorie-content">
+                        <div class="categorie-icon">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/gqzfzudq.json"
+                                target="div.categorie-card"
+                                trigger="morph"
+                                colors="primary:#fff,secondary:#fff"
+                                stroke="60"
+                                style="width:80px;height:80px">
+                            </lord-icon>
+                            
+                        </div>
+    
+                        <div class="categorie-text">
+                            <h2 style="font-size: 20px;">General Knowledge</h2>
+                            <h2>Question:</h2>
+                            <p style="font-size: 18px; font-weight: bold;" id="question"></p>
+                            <h2>Select the correct answer:</h2>
+                            <div id="Answers">
+
+
+                            </div>
+                        </div>
+    
+                        
+                    </div>
+                </div>
+    
+            </div>
+            
+        </div>
+    </section>
+    
+
+</body>
+</html>
+
+<script language="javascript" type="text/javascript" src="js/script.js"></script>
+<script language="javascript" type="text/javascript" src="js/GeneralKnowledge.js"></script>
+

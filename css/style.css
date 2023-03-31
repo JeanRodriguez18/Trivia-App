@@ -200,6 +200,14 @@ nav button {
     border-radius: 20px;
 }
 
+.question-card{
+    background-color: var(--color-bg2);
+    width: 600px;
+    height: 615px;
+    margin: 20px 10px 10px 10px;
+    border-radius: 20px;
+}
+
 .categorie-content{
     padding: 10px;
 }
