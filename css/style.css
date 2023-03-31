@@ -202,8 +202,8 @@ nav button {
 
 .question-card{
     background-color: var(--color-bg2);
-    width: 600px;
-    height: 615px;
+    width: 615px;
+    height: 750px;
     margin: 20px 10px 10px 10px;
     border-radius: 20px;
 }
@@ -248,6 +248,68 @@ nav button {
     border: none;
 }
 
+.btn-answers{
+    background-color: var(--color-bg);
+    color: #fff;
+    width: 550px;
+    cursor: pointer;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    margin-bottom: 25px;
+}
+
+.disable{
+    background-color: var(--color-bg);
+    color: #fff;
+    width: 550px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    margin-bottom: 25px;
+}
+
+/* .btn-answers:hover{
+    background-color: var(--color-bg1);
+    transition: var(--transition);
+} */
+
+.btn-next {
+    background-color: var(--color-bg);
+    color: #fff;
+    width: 170px;
+    cursor: pointer;
+    height: 38px;
+    font-size: 15px;
+    font-weight: 600px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+
+.btn-next:hover{
+    background-color: var(--color-bg1);
+    transition: var(--transition);
+}
+
+.question-btn{
+    text-align: end;
+}
+
+.correct{
+    background-color: green;
+    transition: all 1000ms ease;
+}
+.wrong{
+    background-color: red;
+    transition: all 1000ms ease;
+}
 /*CONTACT CSS*/
 
 .contact_container{
@@ -470,6 +532,14 @@ textarea{
         width: var(--container-width-sm);
     }
 
+    .question-card{
+        width: 330px;
+        height: auto;
+    }
+    .btn-answers{
+        width: 300px;
+    }
+
     section{
         height: 100%;
     }
@@ -496,4 +566,6 @@ textarea{
     .form_name input[type="text"] {
         width: 100%;
     };
+
+    
 }

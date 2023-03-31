@@ -24,3 +24,51 @@ const closeNav = () => {
 }
 
 closeBtn.addEventListener('click', closeNav)
+
+
+export function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+  
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+  
+}
+
+$("#Answers").on( "click", 'button.btn-answers' ,function() {
+
+    if ($(this).hasClass("correct_answer")) {
+        $(this).addClass("correct");
+
+        $('.btn-answers').each(function(i, obj) {
+
+            $(this).addClass("disable");
+            $(this).removeClass("btn-answers");
+
+        });
+    }  
+    else{
+        $(this).addClass("wrong");
+        $('.btn-answers').each(function(i, obj) {
+
+            if($(this).hasClass("correct_answer")){
+                $(this).addClass("correct");
+            }
+            $(this).addClass("disable");
+            $(this).removeClass("btn-answers");
+
+        });
+    }
+
+  
+});
