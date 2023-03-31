@@ -540,6 +540,10 @@ textarea{
         width: 300px;
     }
 
+    .disable{
+        width: 300px;
+    }
+
     section{
         height: 100%;
     }
