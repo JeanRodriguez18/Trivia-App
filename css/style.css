@@ -202,10 +202,11 @@ nav button {
 
 .question-card{
     background-color: var(--color-bg2);
-    width: 615px;
-    height: 750px;
+    width: 650px;
+    height: 760px;
     margin: 20px 10px 10px 10px;
     border-radius: 20px;
+    position: relative;
 }
 
 .categorie-content{
@@ -246,6 +247,11 @@ nav button {
     border-radius: 3px;
     outline: none;
     border: none;
+}
+
+.btn-categorie:hover{
+    background-color: var(--color-bg1);
+    transition: var(--transition);
 }
 
 .btn-answers{
@@ -291,6 +297,9 @@ nav button {
     border-radius: 20px;
     outline: none;
     border: none;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
 }
 
 .btn-next:hover{
@@ -533,8 +542,8 @@ textarea{
     }
 
     .question-card{
-        width: 330px;
-        height: auto;
+        width: 360px;
+        height: 830px;
     }
     .btn-answers{
         width: 300px;
