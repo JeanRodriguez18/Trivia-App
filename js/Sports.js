@@ -21,13 +21,12 @@ function calltriviapi(){
             //add every incorrect answer to the array
             $.each(data.results[index].incorrect_answers, function(index, value){
                 answers.push({value: 'Incorrect_answer', text: value})
-                console.log(value);
             })
             
             answers = shuffle(answers);
     
             $.each(answers, function(index){
-                var append_me = '<button id="answer" class="btn-answers '+answers[index].value+'"> '+ atob(answers[index].text) +' </button>'
+                var append_me = '<button id="sports" class="btn-answers '+answers[index].value+'"> '+ atob(answers[index].text) +' </button>'
                 $("#Answers").append(append_me);
             });
         });
