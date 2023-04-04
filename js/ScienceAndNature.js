@@ -38,6 +38,8 @@ function calltriviapi(){
 }
 
 calltriviapi();
+getconfetti('scienceandnature');
+
 
 
 $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
@@ -45,6 +47,15 @@ $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
     $('#Answers').empty();
     calltriviapi();
     getcounter();
+    getconfetti('scienceandnature');
+
 });
 
+$("#reset").on("click", function () { 
 
+    $("#popup").hide();
+    $("#canvas").hide();
+    localStorage.removeItem('scienceandnature');
+    getcounter();
+    
+});

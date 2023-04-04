@@ -38,6 +38,8 @@ function calltriviapi(){
 }
 
 calltriviapi();
+getconfetti('history');
+
 
 
 $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
@@ -45,6 +47,17 @@ $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
     $('#Answers').empty();
     calltriviapi();
     getcounter();
+    getconfetti('history');
+
 });
 
+
+$("#reset").on("click", function () { 
+
+    $("#popup").hide();
+    $("#canvas").hide();
+    localStorage.removeItem('history');
+    getcounter();
+    
+});
 

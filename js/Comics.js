@@ -38,6 +38,7 @@ function calltriviapi(){
 }
 
 calltriviapi();
+getconfetti('comics');
 
 
 $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
@@ -45,6 +46,17 @@ $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
     $('#Answers').empty();
     calltriviapi();
     getcounter();
+    getconfetti('comics');
+
 });
 
+
+$("#reset").on("click", function () { 
+
+    $("#popup").hide();
+    $("#canvas").hide();
+    localStorage.removeItem('comics');
+    getcounter();
+    
+});
 

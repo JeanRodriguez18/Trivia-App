@@ -38,6 +38,7 @@ function calltriviapi(){
 }
 
 calltriviapi();
+getconfetti('anime');
 
 
 $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
@@ -45,6 +46,14 @@ $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
     $('#Answers').empty();
     calltriviapi();
     getcounter();
+    getconfetti('anime');
 });
 
+$("#reset").on("click", function () { 
 
+    $("#popup").hide();
+    $("#canvas").hide();
+    localStorage.removeItem('anime');
+    getcounter();
+    
+});

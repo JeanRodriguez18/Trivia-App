@@ -38,6 +38,8 @@ function calltriviapi(){
 }
 
 calltriviapi();
+getconfetti('sports');
+
 
 
 $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
@@ -45,6 +47,14 @@ $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
     $('#Answers').empty();
     calltriviapi();
     getcounter();
+    getconfetti('sports');
 });
 
+$("#reset").on("click", function () { 
 
+    $("#popup").hide();
+    $("#canvas").hide();
+    localStorage.removeItem('sports');
+    getcounter();
+    
+});

@@ -19,6 +19,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
+    <script src="js/index.min.js"></script>
 
 
 </head>
@@ -82,8 +83,27 @@
             </div>
             
         </div>
+
+        <div id="popup" class="popup">
+            <div class="categorie-icon">
+                <lord-icon
+                target="div.popup"
+                src="https://cdn.lordicon.com/xxdqfhbi.json"
+                trigger="morph"
+                stroke="60"
+                style="width:120px;height:120px">
+                </lord-icon>
+            </div>
+            
+            <h2>congratulations you have completed this category</h2>
+            <button id="reset" class="btn-reset">Try Again</button>
+            <a href="index.html"><button class="btn-back">Go Back</button></a>
+        </div>
+       
     </section>
     
+    <canvas id="canvas" class="confetti"></canvas>
+
 
 </body>
 </html>

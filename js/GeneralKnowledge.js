@@ -1,4 +1,4 @@
-import { getcounter, shuffle } from "./script.js";
+import { getcounter, shuffle, getconfetti } from "./script.js";
 
 let answers = [];
 
@@ -38,6 +38,7 @@ function calltriviapi(){
 }
 
 calltriviapi();
+getconfetti('generalknowledge');
 
 
 $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
@@ -45,6 +46,17 @@ $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
     $('#Answers').empty();
     calltriviapi();
     getcounter();
+    getconfetti('generalknowledge');
+});
+
+
+$("#reset").on("click", function () { 
+
+    $("#popup").hide();
+    $("#canvas").hide();
+    localStorage.removeItem('generalknowledge');
+    getcounter();
+    
 });
 
 

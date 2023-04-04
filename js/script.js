@@ -216,3 +216,125 @@ export function getcounter(){
 }
 
 getcounter();
+
+
+
+function confetti(){
+    var confettiSettings = { target: 'canvas' };
+    var confetti = new ConfettiGenerator(confettiSettings);
+    confetti.render();
+}
+
+
+
+
+
+export function getconfetti(type){
+
+    switch(type){
+        case 'anime' :
+            counter = localStorage.getItem('anime') || 0;
+            if(counter == 10){
+                $("#popup").show("slow");
+                $("#canvas").show("slow");
+                confetti()
+            }
+            break;
+        case 'art' :
+            counter = localStorage.getItem('art') || 0;
+            if(counter == 10){
+                $("#popup").show("slow");
+                $("#canvas").show("slow");
+                confetti()
+            }
+            break;
+        case 'books' :
+            counter = localStorage.getItem('books') || 0;
+            if(counter == 10){
+                $("#popup").show("slow");
+                $("#canvas").show("slow");
+                confetti()
+            }
+            break;
+        case 'comics' :
+            counter = localStorage.getItem('comics') || 0;
+            if(counter == 10){
+                $("#popup").show("slow");
+                $("#canvas").show("slow");
+                confetti()
+            }
+            break;
+            
+        case 'films' :
+            counter = localStorage.getItem('films') || 0;
+            if(counter == 10){
+                $("#popup").show("slow");
+                $("#canvas").show("slow");
+                confetti()
+            }
+            break;
+            
+        case 'generalknowledge' :
+            counter = localStorage.getItem('generalknowledge') || 0;
+            if(counter == 10){
+                $("#popup").show("slow");
+                $("#canvas").show("slow");
+                confetti()
+            }
+            break;
+            
+        case 'geography' :
+            counter = localStorage.getItem('geography') || 0;
+            if(counter == 10){
+                $("#popup").show("slow");
+                $("#canvas").show("slow");
+                confetti()
+            }
+            break;
+            
+        case 'history' :
+            counter = localStorage.getItem('history') || 0;
+            if(counter == 10){
+                $("#popup").show("slow");
+                $("#canvas").show("slow");
+                confetti()
+            }
+            break;
+            
+        case 'music' :
+            counter = localStorage.getItem('music') || 0;
+            if(counter == 10){
+                $("#popup").show("slow");
+                $("#canvas").show("slow");
+                confetti()
+            }
+            break;
+            
+        case 'scienceandnature' :
+            counter = localStorage.getItem('scienceandnature') || 0;
+            if(counter == 10){
+                $("#popup").show("slow");
+                $("#canvas").show("slow");
+                confetti()
+            }
+            break;
+            
+        case 'sports' :
+            counter = localStorage.getItem('sports') || 0;
+            if(counter == 10){
+                $("#popup").show("slow");
+                $("#canvas").show("slow");
+                confetti()
+            }
+            break;
+
+        case 'videogames' :
+            counter = localStorage.getItem('videogames') || 0;
+            if(counter == 10){
+                $("#popup").show("slow");
+                $("#canvas").show("slow");
+                confetti()
+            }
+            break;
+    }
+}

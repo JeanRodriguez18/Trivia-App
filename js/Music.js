@@ -38,6 +38,9 @@ function calltriviapi(){
 }
 
 calltriviapi();
+getconfetti('music');
+
+
 
 
 $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
@@ -45,6 +48,17 @@ $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
     $('#Answers').empty();
     calltriviapi();
     getcounter();
+    getconfetti('music');
+});
+
+
+$("#reset").on("click", function () { 
+
+    $("#popup").hide();
+    $("#canvas").hide();
+    localStorage.removeItem('music');
+    getcounter();
+    
 });
 
 

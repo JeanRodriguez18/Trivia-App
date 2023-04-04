@@ -39,6 +39,7 @@ function calltriviapi(){
 }
 
 calltriviapi();
+getconfetti('films');
 
 
 $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
@@ -46,6 +47,14 @@ $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
     $('#Answers').empty();
     calltriviapi();
     getcounter();
+    getconfetti('films');
 });
 
+$("#reset").on("click", function () { 
 
+    $("#popup").hide();
+    $("#canvas").hide();
+    localStorage.removeItem('films');
+    getcounter();
+    
+});

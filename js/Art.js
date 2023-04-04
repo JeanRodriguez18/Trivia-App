@@ -39,6 +39,8 @@ function calltriviapi(){
 }
 
 calltriviapi();
+getconfetti('art');
+
 
 
 $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
@@ -46,6 +48,17 @@ $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
     $('#Answers').empty();
     calltriviapi();
     getcounter();
+    getconfetti('art');
+});
+
+
+$("#reset").on("click", function () { 
+
+    $("#popup").hide();
+    $("#canvas").hide();
+    localStorage.removeItem('art');
+    getcounter();
+    
 });
 
 
