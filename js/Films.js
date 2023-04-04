@@ -1,4 +1,6 @@
 import { shuffle } from "./script.js";
+import { getcounter} from "./script.js";
+
 
 let answers = [];
 
@@ -44,6 +46,7 @@ $("#div-btn-question").on( "click", 'button.btn-next' ,function() {
     $('#question').html('');
     $('#Answers').empty();
     calltriviapi();
+    getcounter();
 });
 
 

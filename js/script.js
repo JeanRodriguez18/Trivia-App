@@ -161,3 +161,58 @@ function setcounter(id){
             break;
     }
 }
+
+export function getcounter(){
+    
+    counter = localStorage.getItem('anime') || 0;
+    $("#anime_counter").html(' '+ counter +' / 10')
+
+
+    counter = localStorage.getItem('art') || 0;
+    $("#art_counter").html(' '+ counter +' / 10')
+
+
+    counter = localStorage.getItem('books') || 0;
+    $("#books_counter").html(' '+ counter +' / 10')
+
+
+    counter = localStorage.getItem('comics') || 0;
+    $("#comics_counter").html(' '+ counter +' / 10')
+
+    counter = localStorage.getItem('films') || 0;
+    $("#films_counter").html(' '+ counter +' / 10')
+
+
+    counter = localStorage.getItem('generalknowledge') || 0;
+    $("#general_knowledge_counter").html(' '+ counter +' / 10')
+
+
+    counter = localStorage.getItem('geography') || 0;
+    $("#geography_counter").html(' '+ counter +' / 10')
+
+
+
+    counter = localStorage.getItem('history') || 0;
+    $("#history_counter").html(' '+ counter +' / 10')
+
+
+
+    counter = localStorage.getItem('music') || 0;
+    $("#music_counter").html(' '+ counter +' / 10')
+
+
+    counter = localStorage.getItem('scienceandnature') || 0;
+    $("#science_nature_counter").html(' '+ counter +' / 10')
+
+
+
+    counter = localStorage.getItem('sports') || 0;
+    $("#sports_counter").html(' '+ counter +' / 10')
+
+
+    counter = localStorage.getItem('videogames') || 0;
+    $("#video_games_counter").html(' '+ counter +' / 10')
+
+}
+
+getcounter();
