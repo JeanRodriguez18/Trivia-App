@@ -1,5 +1,4 @@
-import { shuffle } from "./script.js";
-import { getcounter} from "./script.js";
+import { getcounter, shuffle } from "./script.js";
 
 let answers = [];
 
