@@ -45,6 +45,22 @@ export function shuffle(array) {
   
 }
 
+export function showLoading() {
+    document.getElementById('loading').style.display = 'flex';
+}
+
+export function hideLoading() {
+    document.getElementById('loading').style.display = 'none';
+}
+
+export function disableBtn(){
+    document.getElementById('nextButton').disabled = true;
+}
+
+export function ableBtn()
+{
+    document.getElementById('nextButton').disabled = false;
+}
 
 $("#Answers").on( "click", 'button.btn-answers' ,function() {
 
